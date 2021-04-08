@@ -37,7 +37,7 @@ hyp = learner.run(
     print_observationtable=False,    # Print the observation table during the learning process
     # Uncomment this hook to pause learning after each hypothesis
     # I know, it's not pretty.
-    # on_hypothesis=lambda _: (print("press enter to continue"), input())
+    # on_hypothesis=lambda _: input("press enter to continue\n")
 )
 
 # Draw the hypothesis
