@@ -4,9 +4,9 @@ Your university recently installed fancy new network connected coffee machines. 
 
 To make it easy for students to script their daily coffee intake, the coffee machines are reachable over a simple telnet connection on:
 
-`188.166.11.248:31338`
+`34.90.152.198:13338`
 
-As an example, use netcat `nc 188.166.11.248 31338` to connect to the machine and try some of the following commands:
+As an example, use netcat `nc 34.90.152.198 13338` to connect to the machine and try some of the following commands:
 
 - choose_black
 - choose_cappuccino
@@ -22,7 +22,7 @@ As often happens with IoT devices (coffee machines included), there is a bug in 
 
 - Given the possible inputs above, draw what you think the state machine representing the coffee machine looks like. How many states do you need? This number will be important for configuring the W-method in the next part. Include the state machine and number in your report.
 
-### Make the learner talk to the coffee machine (optional?):
+### Make the learner talk to the coffee machine:
 
 - Use STMLearn, subclass stmlearn.suls.SUL (See `RemoteCoffeeMachineSul.py`) and implement the abstract methods to send inputs and read outputs over telnet.
 
@@ -42,7 +42,7 @@ As often happens with IoT devices (coffee machines included), there is a bug in 
 ## Part 2:
 After a firmware update, the bug is fixed! However, somebody at the coffee machine company forgot to disable developer mode before shipping the new version. With developer mode enabled, there is a secret code (sequence of inputs) that allows users to obtain free coffee! Using a state machine learning setup similar to the last task, learn another state machine of the new firmware and figure out what the secret code is! Include the learned state machine in your report, as well as what you think the secret code is. (Note: you could probably brute force this, but that is not the intended solution :) )
 
-The updated machine is reachable at `188.166.11.248:31337`
+The updated machine is reachable at `34.90.152.198:13337`
 
 #### Hints:
 - The new state machine has 10 states
